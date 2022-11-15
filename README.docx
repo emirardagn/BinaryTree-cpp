@@ -1,11 +1,6 @@
-CS 201, Fall 2022
+CS 201, Fall 2022   Emre Sefer's
 Homework 3
 
-
-DUE: November 25, Friday @23:59 
-
-Please check the submission rules towards the end of the document. 
-Points will be deducted in case of a violation of these rules!
 
 Description: In this assignment you will write a C++ program that takes a set of integer values as input, and constructs a binary search tree. Then, it will print out the entered values by traversing the constructed tree with preorder, inorder, and postorder traversal strategies.
 
@@ -48,22 +43,3 @@ The main method creates a BinarySearchTree object, receives the input numbers fr
 
 All the public methods of the BinarySearchTree class make calls to internal, private methods that are recursively called. For instance, the insert method that is called by the main method, in turn makes a call to the private insert method by specifying root as the BinaryTreeNode pointer argument. This private method can create a new node with the specified element and assign this newly created node to the root if the root is null. Otherwise, if the root is not null, it can make a recursive call with the left or right child node of the root as the argument. Similarly, all the other private methods are initially called with the root node as the argument. The private method deleteNodes is supposed to be called by the destructor to delete all the nodes in the tree in a bottom-up manner (i.e., post order traversal). This method will also be called with the root node as the argument and it will traverse the tree recursively to delete every visited node after its descendants are deleted.
 
- 
-3) Submission
-
-You will submit this homework via the LMS system. You should follow the file-naming conventions and guidelines below. 
-
-•	You should submit your source files as a ZIP archive file (NOT RAR or other formats). The name of the file should be in format “<USER-ID>_hw<HOMEWORK-NR>.zip”. For example, if your username is vy1043, then the name of the submitted file should be “vy1043_hw3.zip”. Pay attention that all the letters are in lower-case. ZIP archive is supposed to contain just the source files, no folders are allowed by any means.
-
-•	The contents of the ZIP file should be as follows:
-o	hmw3.cpp (includes the main function)
-o	BinarySearchTree.h (BinarySearchTree class definition)
-o	BinarySearchTree.cpp (BinarySearchTree class implementation)
-o	BinaryTreeNode.h (BinaryTreeNode class definition)
-o	BinaryTreeNode.cpp (BinaryTreeNode class implementation)
-
-•	Late submissions and C++ files that do not compile are not accepted. 
-
-•	You can resubmit your homework (until the deadline) if you need to. 
-
-•	Make sure that your program does not include commands specific to a development environment, e.g., system(“pause”) or #pragma once in Visual Studio.
