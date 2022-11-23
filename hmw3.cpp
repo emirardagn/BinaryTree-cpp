@@ -37,9 +37,10 @@ int main()
             cin>>inputNum;
 
         }
-
-
     }
-
-
+    
+    myTree->printPreorder();
+    myTree->printInorder();
+    myTree->printPostOrder();
+    delete(myTree);
 }
